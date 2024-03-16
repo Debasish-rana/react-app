@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Debasish-rana.github.io/react-app",
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "parcel": "^2.11.0",
@@ -114,6 +115,8 @@
   },
   "scripts": {
     "start": "parcel reactcourse.html",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "parcel build reactcourse.html",
     "test": "jest"
   },
