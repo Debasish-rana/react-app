@@ -1,0 +1,1121 @@
+const resList = [
+          {
+            info: {
+              id: "13927",
+              name: "Wow! Momo",
+              cloudinaryImageId: "5a148e63e9c54942e37627da1aa156be",
+              locality: "Kasba",
+              areaName: "Kasba",
+              costForTwo: "₹300 for two",
+              cuisines: [
+                "Tibetan",
+                "Healthy Food",
+                "Asian",
+                "Chinese",
+                "Snacks",
+                "Continental",
+                "Desserts",
+                "Beverages",
+              ],
+              avgRating: 4.4,
+              parentId: "1776",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 25,
+                lastMileTravel: 1.1,
+                serviceability: "SERVICEABLE",
+                slaString: "25-30 mins",
+                lastMileTravelString: "1.1 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 23:59:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "ITEMS",
+                subHeader: "AT ₹99",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/wow-momo-kasba-kolkata-13927",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "3022",
+              name: "Aminia Restaurant",
+              cloudinaryImageId: "ub35uaf2iferroprejgy",
+              locality: "Golpark",
+              areaName: "Golpark",
+              costForTwo: "₹500 for two",
+              cuisines: ["Biryani", "Mughlai", "Indian", "Kebabs", "Tandoor"],
+              avgRating: 4.5,
+              parentId: "47",
+              avgRatingString: "4.5",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 35,
+                lastMileTravel: 2.2,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "2.2 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-07 03:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              aggregatedDiscountInfoV2: {},
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/aminia-restaurant-golpark-kolkata-3022",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "39309",
+              name: "KFC",
+              cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
+              locality: "Kasba",
+              areaName: "Kasba RB Connector",
+              costForTwo: "₹450 for two",
+              cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+              avgRating: 4.4,
+              parentId: "547",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 27,
+                lastMileTravel: 1.3,
+                serviceability: "SERVICEABLE",
+                slaString: "25-30 mins",
+                lastMileTravelString: "1.3 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-07 02:59:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/kfc-kasba-kasba-rb-connector-kolkata-39309",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "3638",
+              name: "Gupta Brothers -Ballygunge",
+              cloudinaryImageId: "s6osrxqumlqssg6wvu65",
+              locality: "Elgin Road",
+              areaName: "Ballygunge",
+              costForTwo: "₹300 for two",
+              cuisines: [
+                "North Indian",
+                "Chinese",
+                "Desserts",
+                "South Indian",
+                "Indian",
+                "Chaat",
+                "Mexican",
+              ],
+              avgRating: 4.4,
+              parentId: "358878",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 35,
+                lastMileTravel: 3,
+                serviceability: "SERVICEABLE",
+                slaString: "35-40 mins",
+                lastMileTravelString: "3.0 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 22:30:00",
+                opened: true,
+              },
+              badges: {
+                imageBadges: [
+                  {
+                    imageId: "v1695133679/badges/Pure_Veg111.png",
+                    description: "pureveg",
+                  },
+                ],
+              },
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "pureveg",
+                          imageId: "v1695133679/badges/Pure_Veg111.png",
+                        },
+                      },
+                    ],
+                  },
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO ₹80",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/gupta-brothers-ballygunge-elgin-road-ballygunge-kolkata-3638",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "216675",
+              name: "Burger King",
+              cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+              locality: "Kasba",
+              areaName: "East Kolkata Township",
+              costForTwo: "₹350 for two",
+              cuisines: ["Burgers", "American"],
+              avgRating: 4.4,
+              parentId: "166",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 24,
+                lastMileTravel: 1.3,
+                serviceability: "SERVICEABLE",
+                slaString: "20-25 mins",
+                lastMileTravelString: "1.3 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 23:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/burger-king-kasba-east-kolkata-township-kolkata-216675",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "69297",
+              name: "Machhli Baba Fries",
+              cloudinaryImageId: "dvaa3cfy1v7tkdmesb7s",
+              locality: "Block Eg",
+              areaName: "Rajdanga Main Road",
+              costForTwo: "₹250 for two",
+              cuisines: [
+                "Bengali",
+                "Street Food",
+                "Rolls & Wraps",
+                "Kebabs",
+                "Fast Food",
+              ],
+              avgRating: 4.6,
+              parentId: "4413",
+              avgRatingString: "4.6",
+              totalRatingsString: "5K+",
+              sla: {
+                deliveryTime: 32,
+                lastMileTravel: 1.6,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "1.6 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-07 00:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/machhli-baba-fries-block-eg-rajdanga-main-road-kolkata-69297",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "67722",
+              name: "Kookie Jar",
+              cloudinaryImageId: "0b69d733f3174c1d7ef9829e2a2fc33b",
+              locality: "Niharika Apartment, Ground Floor",
+              areaName: "Gariahat",
+              costForTwo: "₹350 for two",
+              cuisines: ["Desserts", "Snacks", "Bakery", "Ice Cream"],
+              avgRating: 4.8,
+              parentId: "5550",
+              avgRatingString: "4.8",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 24,
+                lastMileTravel: 2.4,
+                serviceability: "SERVICEABLE",
+                slaString: "20-25 mins",
+                lastMileTravelString: "2.4 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 20:00:00",
+                opened: true,
+              },
+              badges: {
+                textExtendedBadges: [
+                  {
+                    iconId: "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                    shortDescription: "Perfect Cake Delivery",
+                    fontColor: "#7E808C",
+                  },
+                ],
+              },
+              isOpen: true,
+              aggregatedDiscountInfoV2: {},
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "",
+                          fontColor: "#7E808C",
+                          iconId: "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                          shortDescription: "Perfect Cake Delivery",
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/kookie-jar-niharika-apartment-ground-floor-gariahat-kolkata-67722",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "15267",
+              name: "Kasturi Restaurant",
+              cloudinaryImageId: "qhq7lcgv502nymy0znwo",
+              locality: "Ruby Area",
+              areaName: "Ballygunge",
+              costForTwo: "₹400 for two",
+              cuisines: ["Bengali", "Thalis", "Desserts"],
+              avgRating: 4.4,
+              parentId: "2046",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 49,
+                lastMileTravel: 1.9,
+                serviceability: "SERVICEABLE",
+                slaString: "45-50 mins",
+                lastMileTravelString: "1.9 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 23:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "ITEMS",
+                subHeader: "AT ₹159",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/kasturi-restaurant-ruby-area-ballygunge-kolkata-15267",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "182029",
+              name: "The Yellow Straw",
+              cloudinaryImageId: "8f52ceb30e31faed0c2d6ee81b8c639d",
+              locality: "Acropolis",
+              areaName: "Acropolis Mall",
+              costForTwo: "₹250 for two",
+              cuisines: [
+                "Juices",
+                "Beverages",
+                "Salads",
+                "Healthy Food",
+                "Snacks",
+                "Desserts",
+                "South Indian",
+                "Ice Cream",
+              ],
+              avgRating: 4.5,
+              parentId: "10442",
+              avgRatingString: "4.5",
+              totalRatingsString: "1K+",
+              sla: {
+                deliveryTime: 28,
+                lastMileTravel: 1.2,
+                serviceability: "SERVICEABLE",
+                slaString: "25-30 mins",
+                lastMileTravelString: "1.2 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 22:15:00",
+                opened: true,
+              },
+              badges: {
+                imageBadges: [
+                  {
+                    imageId: "v1695133679/badges/Pure_Veg111.png",
+                    description: "pureveg",
+                  },
+                ],
+                textExtendedBadges: [
+                  {
+                    iconId: "guiltfree/GF_Logo_android_3x",
+                    shortDescription: "brand",
+                    fontColor: "#7E808C",
+                  },
+                ],
+              },
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "pureveg",
+                          imageId: "v1695133679/badges/Pure_Veg111.png",
+                        },
+                      },
+                    ],
+                  },
+                  textBased: {},
+                  textExtendedBadges: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "",
+                          fontColor: "#7E808C",
+                          iconId: "guiltfree/GF_Logo_android_3x",
+                          shortDescription: "brand",
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "30% OFF",
+                subHeader: "UPTO ₹75",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/the-yellow-straw-acropolis-acropolis-mall-kolkata-182029",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "18117",
+              name: "Hindusthan Sweets",
+              cloudinaryImageId: "criuo3dsgvodsed1vxl2",
+              locality: "Near 8B Bus stand",
+              areaName: "Jadavpur",
+              costForTwo: "₹200 for two",
+              cuisines: ["Snacks", "Sweets"],
+              avgRating: 4.6,
+              veg: true,
+              parentId: "3371",
+              avgRatingString: "4.6",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 31,
+                lastMileTravel: 4,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "4.0 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 20:30:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "30% OFF",
+                subHeader: "UPTO ₹75",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/hindusthan-sweets-near-8b-bus-stand-jadavpur-kolkata-18117",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "120155",
+              name: "Cakes",
+              cloudinaryImageId: "xo4xq9ufqmplnusb9nqs",
+              locality: "RAJDANGA MAIN ROAD",
+              areaName: "RAJDANGA MAIN ROAD",
+              costForTwo: "₹200 for two",
+              cuisines: ["Desserts", "Bakery"],
+              avgRating: 4.6,
+              parentId: "4861",
+              avgRatingString: "4.6",
+              totalRatingsString: "5K+",
+              sla: {
+                deliveryTime: 21,
+                lastMileTravel: 1.5,
+                serviceability: "SERVICEABLE",
+                slaString: "20-25 mins",
+                lastMileTravelString: "1.5 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 21:30:00",
+                opened: true,
+              },
+              badges: {
+                textExtendedBadges: [
+                  {
+                    iconId: "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                    shortDescription: "Perfect Cake Delivery",
+                    fontColor: "#7E808C",
+                  },
+                ],
+              },
+              isOpen: true,
+              aggregatedDiscountInfoV2: {},
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "",
+                          fontColor: "#7E808C",
+                          iconId: "v1705582451/Ratnesh_Badges/Listing_HR.png",
+                          shortDescription: "Perfect Cake Delivery",
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/cakes-rajdanga-main-road-kolkata-120155",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "18111",
+              name: "Bhojohori Manna",
+              cloudinaryImageId: "17d6b518e586e760d9ca4ad0de775d9e",
+              locality: "E M Bypass",
+              areaName: "E M Bypass",
+              costForTwo: "₹900 for two",
+              cuisines: ["Bengali", "Biryani"],
+              avgRating: 4.4,
+              parentId: "113",
+              avgRatingString: "4.4",
+              totalRatingsString: "1K+",
+              sla: {
+                deliveryTime: 36,
+                lastMileTravel: 2.4,
+                serviceability: "SERVICEABLE",
+                slaString: "35-40 mins",
+                lastMileTravelString: "2.4 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 22:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/bhojohori-manna-e-m-bypass-kolkata-18111",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "25625",
+              name: "Barista Coffee",
+              cloudinaryImageId: "b64bf721e12e7b3df82c832898999c51",
+              locality: "Gariahat",
+              areaName: "Gariahat",
+              costForTwo: "₹350 for two",
+              cuisines: ["Beverages", "Snacks", "Desserts"],
+              avgRating: 4.4,
+              parentId: "2359",
+              avgRatingString: "4.4",
+              totalRatingsString: "1K+",
+              sla: {
+                deliveryTime: 32,
+                lastMileTravel: 2.5,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "2.5 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 22:45:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "25% OFF",
+                subHeader: "UPTO ₹150",
+                discountTag: "SAVE BIG",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/barista-coffee-gariahat-kolkata-25625",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "339597",
+              name: "Dariole",
+              cloudinaryImageId: "wb7o5n1mtjrtf7xi9yyr",
+              locality: "R.K.Chatterjee Road",
+              areaName: "Kasba",
+              costForTwo: "₹250 for two",
+              cuisines: ["Bakery", "Desserts"],
+              avgRating: 4.6,
+              parentId: "6960",
+              avgRatingString: "4.6",
+              totalRatingsString: "1K+",
+              sla: {
+                deliveryTime: 18,
+                lastMileTravel: 0.7,
+                serviceability: "SERVICEABLE",
+                slaString: "15-20 mins",
+                lastMileTravelString: "0.7 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 21:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/dariole-r-k-chatterjee-road-kasba-kolkata-339597",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "10602",
+              name: "6 Ballygunge Place",
+              cloudinaryImageId: "dx9rijteybsa2natczw3",
+              locality: "Kasba",
+              areaName: "East Kolkata Township",
+              costForTwo: "₹800 for two",
+              cuisines: ["Bengali"],
+              avgRating: 4.4,
+              parentId: "1243",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 26,
+                lastMileTravel: 0.6,
+                serviceability: "SERVICEABLE",
+                slaString: "25-30 mins",
+                lastMileTravelString: "0.6 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 21:45:00",
+                opened: true,
+              },
+              badges: {
+                imageBadges: [
+                  {
+                    imageId: "newg.png",
+                    description: "Gourmet",
+                  },
+                ],
+              },
+              isOpen: true,
+              aggregatedDiscountInfoV2: {},
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "Gourmet",
+                          imageId: "newg.png",
+                        },
+                      },
+                    ],
+                  },
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/6-ballygunge-place-kasba-east-kolkata-township-kolkata-10602",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "77719",
+              name: "The Biryani Inc.",
+              cloudinaryImageId: "55614156379db324675650213bb544a8",
+              locality: "Near Ballygunge Station",
+              areaName: "Kasba",
+              costForTwo: "₹350 for two",
+              cuisines: ["Biryani", "Mughlai", "Kebabs", "North Indian"],
+              avgRating: 4.4,
+              parentId: "7461",
+              avgRatingString: "4.4",
+              totalRatingsString: "10K+",
+              sla: {
+                deliveryTime: 33,
+                lastMileTravel: 1.2,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "1.2 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-07 04:00:00",
+                opened: true,
+              },
+              badges: {},
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {},
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "₹125 OFF",
+                subHeader: "ABOVE ₹249",
+                discountTag: "FLAT DEAL",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/the-biryani-inc-near-ballygunge-station-kasba-kolkata-77719",
+              type: "WEBLINK",
+            },
+          },
+          {
+            info: {
+              id: "379886",
+              name: "The Brooklyn Creamery - Healthy Ice Cream",
+              cloudinaryImageId: "b1b35780a9b1dfeb26d680506d494eaa",
+              locality: "Bally Gunge",
+              areaName: "South Kolkata",
+              costForTwo: "₹200 for two",
+              cuisines: ["Desserts", "Ice Cream", "Healthy Food"],
+              avgRating: 4.5,
+              veg: true,
+              parentId: "236673",
+              avgRatingString: "4.5",
+              totalRatingsString: "100+",
+              sla: {
+                deliveryTime: 30,
+                lastMileTravel: 2.9,
+                serviceability: "SERVICEABLE",
+                slaString: "25-30 mins",
+                lastMileTravelString: "2.9 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-06 23:59:00",
+                opened: true,
+              },
+              badges: {
+                textExtendedBadges: [
+                  {
+                    iconId: "guiltfree/GF_Logo_android_3x",
+                    shortDescription: "brand",
+                    fontColor: "#7E808C",
+                  },
+                ],
+              },
+              isOpen: true,
+              type: "F",
+              badgesV2: {
+                entityBadges: {
+                  imageBased: {},
+                  textBased: {},
+                  textExtendedBadges: {
+                    badgeObject: [
+                      {
+                        attributes: {
+                          description: "",
+                          fontColor: "#7E808C",
+                          iconId: "guiltfree/GF_Logo_android_3x",
+                          shortDescription: "brand",
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+              },
+              differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                  mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                  lottie: {},
+                  video: {},
+                },
+              },
+              reviewsSummary: {},
+              displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              restaurantOfferPresentationInfo: {},
+            },
+            analytics: {},
+            cta: {
+              link: "https://www.swiggy.com/restaurants/the-brooklyn-creamery-healthy-ice-cream-bally-gunge-south-kolkata-kolkata-379886",
+              type: "WEBLINK",
+            },
+          },
+        ];
+     
+        export default resList;
+        
