@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Shimer from "./shimerui";
 import { Link } from "react-router-dom";
 
-
 const Body = () => {
   //Local state variable - super powerful variable
   const [listofrestrurents, setresList] = useState([]);
@@ -88,10 +87,15 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredList.map((resturant) => (
-           <Link className="text-style" key ={resturant.info.id} to={"/restrurents/" + resturant.info.id}><RestrurentCard  resDeta={resturant} /></Link>
+          <Link
+            className="text-style"
+            key={resturant.info.id}
+            to={"/restrurents/" + resturant.info.id}
+          >
+            <RestrurentCard resDeta={resturant} />
+          </Link>
 
-           //<RestrurentCard key ={resturant.info.id} resDeta={resturant} />
-         
+          //<RestrurentCard key ={resturant.info.id} resDeta={resturant} />
         ))}
       </div>
     </div>

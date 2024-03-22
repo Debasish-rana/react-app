@@ -1,24 +1,14 @@
-import { useEffect, useState } from "react";
 import Shimer from "./shimerui";
 import { MENU_URL } from "../util/constent";
-import { MENU_API } from "../util/constent";
 import { useParams } from "react-router-dom";
+import useRestrurentMenu from "../util/useRestMenuHooks";
 
 const ResturantMenu = () => {
-  const [restMenu, setRestMenu] = useState(null);
+  //const [restMenu, setRestMenu] = useState(null);
 
   const { resId } = useParams();
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
-    const deta = await fetch(MENU_API + resId);
-    const json = await deta.json();
-    console.log(json);
-    setRestMenu(json.data);
-  };
+  const restMenu = useRestrurentMenu(resId)
 
   if (restMenu === null) return <Shimer />;
 
