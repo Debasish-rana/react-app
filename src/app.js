@@ -119,33 +119,31 @@ const AppLayout = () => {
   );
 };
 
-
 const appRouter = createBrowserRouter([
   {
-  path: "/",
-  element: <AppLayout />,
- children:[
-  {
-    path:"/",
-    element:<Body />,
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restrurents/:resId",
+        element: <ResturantMenu />,
+      },
+    ],
+    errorElement: <Error />,
   },
-  {
-    path:"/about",
-    element:<About />
-  },
-  {
-    path:"/contact",
-    element:<Contact />
-  },
-  {
-    path:"/restrurents/:resId",
-    element:<ResturantMenu />
-  }
- ],
-errorElement: <Error />,
-}
-
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);

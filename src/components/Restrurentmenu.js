@@ -19,7 +19,6 @@ const ResturantMenu = () => {
       ?.card;
 
   console.log(itemCards);
-
   return (
     <div className="menu">
       <h1>{name}</h1>
