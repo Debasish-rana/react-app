@@ -5,7 +5,7 @@ import useOnlineStatus from "../util/useOnlinesStatus";
 
 const Header = () => {
   const [logBtn, stateLogBtn] = useState("Login");
-const onlineStatus = useOnlineStatus();
+  const onlineStatus = useOnlineStatus();
 
   return (
     <div className="header">
@@ -14,17 +14,27 @@ const onlineStatus = useOnlineStatus();
       </div>
       <div className="list-item">
         <ul>
+          <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>
-              Online Status: {onlineStatus ?  '🟢' : '🔴'}
+            <Link className="nav-item" to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="nav-item"  to={"/"}>Home</Link>
+            <Link className="nav-item" to={"/about"}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link className="nav-item" to={"/about"}>About Us</Link>
+            <Link className="nav-item" to={"/contact"}>
+              Contact Us
+            </Link>
           </li>
+          
           <li>
-            <Link className="nav-item" to={"/contact"}>Contact Us</Link>
+            <Link className="nav-item" to={"/grocery"}>
+             Grocery
+            </Link>
           </li>
           <li>Cart</li>
           <button
