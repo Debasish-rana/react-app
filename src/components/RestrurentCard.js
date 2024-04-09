@@ -14,9 +14,9 @@ const RestrurentCard = (props) => {
   } = resDeta?.info; //optional chaining
 
   return (
-    <div className="res-card" style={{ backgroundColor: "#DDDAD3" }}>
-      <img className="image" src={CDN_URL + resDeta.info.cloudinaryImageId} />
-      <h3>{name}</h3>
+    <div className="res-card m-4 p-4  w-[220px] h-[405px]  rounded-lg shadow-xl bg-slate-200 hover:bg-slate-300 ">
+      <img className="image w-[250px] h-[150px] rounded-lg shadow-xl" src={CDN_URL + resDeta.info.cloudinaryImageId} />
+      <h3 className="font-bold py-2">{name}</h3>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{avgRating}</h4>
       <h4>{locality}</h4>
@@ -25,5 +25,19 @@ const RestrurentCard = (props) => {
     </div>
   );
 };
+
+
+//only use anhance any c 
+
+export  const restrurentOffersInCard =(RestrurentCard)=>{
+return(props)=>{
+  return(
+    <div className="offers">
+      <label className="bg-black text-white mx-5 my-1 p-1 rounded-xl text-xs absolute">Offers available</label>     
+    <RestrurentCard {...props}/>
+    </div>
+  )
+}
+}
 
 export default RestrurentCard;

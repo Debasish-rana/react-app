@@ -9,6 +9,8 @@ import ResturantMenu from "./components/Restrurentmenu";
 //import Grocery from "./components/Grocery";
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
+import ForgotPass from "./components/ForgotPass";
 
 // creat element using react -------------------------------------------------------
 
@@ -144,6 +146,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/grocery",      
         element: <Suspense fallback={<h1>Loading....</h1>}><Grocery /></Suspense>,
+      },
+      {
+        path: "/loginpage",
+        element: <LoginPage />,
+      },
+      {
+        path: "/forgotpass",
+        element: <ForgotPass />,
       },
       {
         path: "/restrurents/:resId",

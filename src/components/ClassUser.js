@@ -48,8 +48,8 @@ componentWillUnmount(){
     const { name, location, avatar_url } = this.state.useInfo;
 
     return (
-      <div className="user-card">
-        <img src={avatar_url}/>
+      <div className="user-card border-2 h-auto w-52 p-5 m-auto border-black rounded-md flex flex-col items-center  ">
+        <img className=" h-auto w-50 rounded-xl  " src={avatar_url}/>
         <h1>Name: {name}</h1>
         <h2>Location: {location}</h2>
       </div>

@@ -2,30 +2,39 @@ import Shimer from "./shimerui";
 import { MENU_URL } from "../util/constent";
 import { useParams } from "react-router-dom";
 import useRestrurentMenu from "../util/useRestMenuHooks";
-
+import RestrarentCatagory from "./RestrarentCatagory";
 const ResturantMenu = () => {
   //const [restMenu, setRestMenu] = useState(null);
 
   const { resId } = useParams();
 
-  const restMenu = useRestrurentMenu(resId)
+  const restMenu = useRestrurentMenu(resId);
 
   if (restMenu === null) return <Shimer />;
 
-  const { name, cuisines, costForTwo } = restMenu?.cards[0]?.card?.card?.info;
+  const { name, cuisines, costForTwo } = restMenu?.cards[2]?.card?.card?.info;
 
   const { itemCards } =
-    restMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
+    restMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
       ?.card;
-
   console.log(itemCards);
+
+  const catagory =
+    restMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+      (c) =>
+        c.card?.card["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+  //["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
+  console.log(catagory);
   return (
     <div className="menu">
-      <h1>{name}</h1>
-      <h2>{cuisines.join(",")}</h2>
-      <h3>{costForTwo / 100} For Two</h3>
+      <h1 className="text-4xl m-2 font-bold flex justify-around">{name}</h1>
+      <h2 className="text-2xl m-2 flex justify-around font-bold">
+        {cuisines.join(",")} - {costForTwo / 100} For Two
+      </h2>
 
-      <div className="offers">
+      <div className="offers flex m-8 mx-[400px] p-4 justify-between border-y-4">
         <div>
           <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/Store_Assets/Icons/OfferIconCart" />
           20% OFF UPTO ₹50
@@ -39,28 +48,11 @@ const ResturantMenu = () => {
           15% OFF UPTO ₹300
         </div>
       </div>
-      <div className="menu-card">
-        <ul>
-          {itemCards.map((item) => (
-            <li key={item.card.info.id}>
-              {<img src={MENU_URL + item.card.info.imageId} />}
-
-              <li>{item.card.info.name} </li>
-              <li>Price - {item.card.info.price / 100}</li>
-              <button>ADD</button>
-            </li>
-          ))}
-        </ul>
+      <div className="text-center">
+        {catagory.map((catagory)=><RestrarentCatagory data={catagory.card.card} key={catagory.card.card.title}/>)}
       </div>
 
-      {/*
-     <h2>Menu</h2>
-      <ul>
-        {itemCards.map((item) => (
-          <li key={item.card.info.id}> {item.card.info.name} - {"Rs."}{item.card.info.price/100}</li>
-        ))}
-      </ul>
-       */}
+      
     </div>
   );
 };

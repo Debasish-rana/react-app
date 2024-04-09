@@ -2,18 +2,19 @@ import { useState } from "react";
 import { LOGO_URL } from "../util/constent";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../util/useOnlinesStatus";
+import LoginPage from "./LoginPage";
 
 const Header = () => {
-  const [logBtn, stateLogBtn] = useState("Login");
+  
   const onlineStatus = useOnlineStatus();
 
   return (
-    <div className="header">
-      <div className="logo">
+    <div className="header flex justify-between m-1 p-2 bg-pink-200  shadow-xl mb-2 rounded-lg sticky top-0">
+      <div className="logo w-20">
         <img src={LOGO_URL} />
       </div>
-      <div className="list-item">
-        <ul>
+      <div className=" flex items-center">
+        <ul className="flex p-2 m-2 gap-8 items-center">
           <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>
             <Link className="nav-item" to={"/"}>
@@ -37,14 +38,13 @@ const Header = () => {
             </Link>
           </li>
           <li>Cart</li>
+          <Link className="nav-item" to={"/loginpage"}>
           <button
-            className="log-btn"
-            onClick={() => {
-              logBtn === "Login" ? stateLogBtn("Logout") : stateLogBtn("Login");
-            }}
-          >
-            {logBtn}
+            className="log-btn w-20 h-11 bg-green-300 rounded-[25px]"
+           >
+           LogIn
           </button>
+          </Link>
         </ul>
       </div>
     </div>

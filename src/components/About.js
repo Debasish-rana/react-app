@@ -19,13 +19,13 @@ class About extends React.Component {
     //console.log("parent render");
     return (
       <div>
-        <h1>This is about page</h1>
+        <h1 className="text-center text-4xl p-4 m-4">This is about page</h1>
         <h3> </h3>
         <Useclass
           name={"Debasish Rana(class-Based)"}
           location={"Plalashchabri, sripur"}
         />
-         <FnUser />
+        {/* <FnUser /> */}
       </div>
     );
   }
