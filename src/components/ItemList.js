@@ -14,7 +14,7 @@ const ItemList = ({ items }) => {
               <span className="font-semibold">
                 ₹ {menu.card.info.price / 100}
               </span>
-             
+
               <br></br>
               <span>{menu.card.info.ratings.aggregatedRating.rating} Star</span>
               <p>{menu.card.info.description}</p>
@@ -25,7 +25,7 @@ const ItemList = ({ items }) => {
               src={CDN_URL + menu.card.info.imageId}
             />
           </div>
-          <button className=" bg-black text-white w-20 rounded-lg h-8 absolute ml-[520px] mt-[-40px]">
+          <button className=" bg-black text-white w-20 rounded-lg h-8 absolute ml-[520px] mt-[-25px]">
             ADD +
           </button>
         </div>

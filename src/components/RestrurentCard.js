@@ -1,8 +1,12 @@
 import { CDN_URL } from "../util/constent";
+import { useContext } from "react";
+import { UserContext } from "../util/UserContext";
 
 const RestrurentCard = (props) => {
-  const { resDeta } = props;
+  const {logedInUser} = useContext(UserContext)
+  
 
+  const { resDeta } = props;
   const {
     cloudinaryImageId,
     name,
@@ -13,6 +17,7 @@ const RestrurentCard = (props) => {
     sla,
   } = resDeta?.info; //optional chaining
 
+
   return (
     <div className="res-card m-4 p-4  w-[220px] h-[405px]  rounded-lg shadow-xl bg-slate-200 hover:bg-slate-300 ">
       <img className="image w-[250px] h-[150px] rounded-lg shadow-xl" src={CDN_URL + resDeta.info.cloudinaryImageId} />
@@ -22,6 +27,7 @@ const RestrurentCard = (props) => {
       <h4>{locality}</h4>
       <h4>{costForTwo}</h4>
       <h4>{sla?.slaString}</h4>
+      <h4>{logedInUser}</h4>
     </div>
   );
 };

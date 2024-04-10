@@ -1,8 +1,9 @@
 //import render from "dom-serializer";
+
 import Useclass from "./ClassUser";
 import React from "react";
-import FnUser from "./Fnuser";
-
+//import FnUser from "./Fnuser";
+import { UserContext } from "../util/UserContext";
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -20,11 +21,13 @@ class About extends React.Component {
     return (
       <div>
         <h1 className="text-center text-4xl p-4 m-4">This is about page</h1>
-        <h3> </h3>
-        <Useclass
-          name={"Debasish Rana(class-Based)"}
-          location={"Plalashchabri, sripur"}
-        />
+       <div className="flex flex-row justify-center mb-4">
+        LoggedIn User 
+        <UserContext.Consumer>
+          {({logedInUser})=><h1 className="font-bold">:  { logedInUser}</h1>}
+        </UserContext.Consumer>
+       </div>
+        <Useclass />
         {/* <FnUser /> */}
       </div>
     );

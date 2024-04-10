@@ -1,15 +1,19 @@
 import RestrurentCard, { restrurentOffersInCard } from "./RestrurentCard";
 //import resList from "../util/resList";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
 import Shimer from "./shimerui";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../util/useOnlinesStatus";
+import { UserContext } from "../util/UserContext";
 
 const Body = () => {
   //Local state variable - super powerful variable
   const [listofrestrurents, setresList] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+const  { logedInUser, setUserName  } = useContext(UserContext)
+
 
   // Whenever state variable updates, react triggers a reconcilation cycle(re-renders the component)
 
@@ -90,6 +94,18 @@ const Body = () => {
           >
             Search
           </button>
+        </div>
+        <div >
+        UserName :- 
+        <input
+            type="text"
+            className="search-box border border-black rounded-lg mt-3 p-1 "
+            value={logedInUser}
+            onChange={(e) => {
+              //for geathering deta into search box
+             setUserName(e.target.value);
+            }}
+          />
         </div>
         <button
           className="filter-btn p-2 h-11 m-2 w-[150] bg-green-300 rounded-2xl"

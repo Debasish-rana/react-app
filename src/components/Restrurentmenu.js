@@ -3,21 +3,24 @@ import { MENU_URL } from "../util/constent";
 import { useParams } from "react-router-dom";
 import useRestrurentMenu from "../util/useRestMenuHooks";
 import RestrarentCatagory from "./RestrarentCatagory";
+import { useState } from "react";
 const ResturantMenu = () => {
   //const [restMenu, setRestMenu] = useState(null);
 
   const { resId } = useParams();
 
   const restMenu = useRestrurentMenu(resId);
+  
+  const [showIndex, setShowIndex] = useState(0);
 
   if (restMenu === null) return <Shimer />;
-
+  
   const { name, cuisines, costForTwo } = restMenu?.cards[2]?.card?.card?.info;
 
   const { itemCards } =
     restMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
       ?.card;
-  console.log(itemCards);
+  //console.log(itemCards);
 
   const catagory =
     restMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
@@ -27,6 +30,7 @@ const ResturantMenu = () => {
     );
   //["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
   console.log(catagory);
+  
   return (
     <div className="menu">
       <h1 className="text-4xl m-2 font-bold flex justify-around">{name}</h1>
@@ -49,10 +53,18 @@ const ResturantMenu = () => {
         </div>
       </div>
       <div className="text-center">
-        {catagory.map((catagory)=><RestrarentCatagory data={catagory.card.card} key={catagory.card.card.title}/>)}
+        {catagory.map((catagory, index) => (
+         
+          <RestrarentCatagory
+            data={catagory.card.card}
+            key={catagory.card.card.title}
+            showItem={index === showIndex ? true :false}
+            setshowIndex  = {()=>setShowIndex(index)}
+           
+          />
+         
+        ))}
       </div>
-
-      
     </div>
   );
 };

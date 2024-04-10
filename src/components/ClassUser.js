@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class Useclass extends React.Component {
   constructor(props) {
     super(props);
@@ -52,6 +53,7 @@ componentWillUnmount(){
         <img className=" h-auto w-50 rounded-xl  " src={avatar_url}/>
         <h1>Name: {name}</h1>
         <h2>Location: {location}</h2>
+       
       </div>
     );
   }
