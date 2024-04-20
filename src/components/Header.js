@@ -6,12 +6,11 @@ import LoginPage from "./LoginPage";
 import { UserContext } from "../util/UserContext";
 
 const Header = () => {
-  
   const onlineStatus = useOnlineStatus();
-const { logedInUser } =  useContext(UserContext)
+  const { logedInUser,locality } = useContext(UserContext);
   return (
-    <div className="header flex justify-between m-1 p-2 bg-pink-200  shadow-xl mb-2 rounded-lg sticky top-0">
-      <div className="logo w-20">
+    <div className="header flex justify-between m-1 p- bg-pink-200  shadow-xl mb-2 rounded-lg sticky top-0">
+      <div className="logo w-16">
         <img src={LOGO_URL} />
       </div>
       <div className=" flex items-center">
@@ -32,22 +31,21 @@ const { logedInUser } =  useContext(UserContext)
               Contact Us
             </Link>
           </li>
-          
+
           <li>
             <Link className="nav-item" to={"/grocery"}>
-             Grocery
+              Grocery
             </Link>
           </li>
           <li>Cart</li>
-          
+
           <Link className="nav-item" to={"/loginpage"}>
-          <button
-            className="log-btn w-20 h-11 bg-green-300 rounded-[25px]"
-           >
-           LogIn
-          </button>
+            <button className="log-btn w-20 h-11 bg-green-300 rounded-[25px]">
+              LogIn
+            </button>
           </Link>
           <li>{logedInUser}</li>
+         
         </ul>
       </div>
     </div>

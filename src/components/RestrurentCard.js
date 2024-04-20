@@ -20,14 +20,14 @@ const RestrurentCard = (props) => {
 
   return (
     <div className="res-card m-4 p-4  w-[220px] h-[405px]  rounded-lg shadow-xl bg-slate-200 hover:bg-slate-300 ">
-      <img className="image w-[250px] h-[150px] rounded-lg shadow-xl" src={CDN_URL + resDeta.info.cloudinaryImageId} />
+      <img className="image w-[250px] h-[120px] rounded-lg shadow-xl" src={CDN_URL + cloudinaryImageId} />
       <h3 className="font-bold py-2">{name}</h3>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{avgRating}</h4>
       <h4>{locality}</h4>
       <h4>{costForTwo}</h4>
       <h4>{sla?.slaString}</h4>
-      <h4>{logedInUser}</h4>
+      <h4>User: {logedInUser}</h4>
     </div>
   );
 };

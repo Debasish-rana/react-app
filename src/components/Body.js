@@ -1,6 +1,6 @@
 import RestrurentCard, { restrurentOffersInCard } from "./RestrurentCard";
 //import resList from "../util/resList";
-import { useState, useEffect,useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimer from "./shimerui";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../util/useOnlinesStatus";
@@ -12,8 +12,8 @@ const Body = () => {
   const [filteredList, setFilteredList] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-const  { logedInUser, setUserName  } = useContext(UserContext)
-
+  
+  const { logedInUser, setUserName } = useContext(UserContext);
 
   // Whenever state variable updates, react triggers a reconcilation cycle(re-renders the component)
 
@@ -95,15 +95,15 @@ const  { logedInUser, setUserName  } = useContext(UserContext)
             Search
           </button>
         </div>
-        <div >
-        UserName :- 
-        <input
+        <div>
+          UserName :-
+          <input
             type="text"
             className="search-box border border-black rounded-lg mt-3 p-1 "
             value={logedInUser}
             onChange={(e) => {
               //for geathering deta into search box
-             setUserName(e.target.value);
+              setUserName(e.target.value);
             }}
           />
         </div>
@@ -131,7 +131,6 @@ const  { logedInUser, setUserName  } = useContext(UserContext)
             ) : (
               <RestrurentCard resDeta={resturant} />
             )}
-            
           </Link>
 
           //<RestrurentCard key ={resturant.info.id} resDeta={resturant} />

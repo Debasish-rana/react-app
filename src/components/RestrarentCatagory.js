@@ -3,6 +3,7 @@ import ItemList from "./ItemList";
 
 const RestrarentCatagory = ({ data, showItem, setshowIndex }) => {
   console.log(setshowIndex);
+  console.log(data)
   const handleClick = () => {
     setshowIndex();
   };
