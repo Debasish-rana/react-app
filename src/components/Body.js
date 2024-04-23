@@ -12,7 +12,6 @@ const Body = () => {
   const [filteredList, setFilteredList] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  
   const { logedInUser, setUserName } = useContext(UserContext);
 
   // Whenever state variable updates, react triggers a reconcilation cycle(re-renders the component)

@@ -12,6 +12,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import ForgotPass from "./components/ForgotPass";
 import { UserContext } from "./util/UserContext";
+//import { store } from ""
+import { Provider } from "react-redux";
+import appStore from "./util/appStore";
+import Cart from "./components/Cart";
+
 // creat element using react -------------------------------------------------------
 
 //const parent = React.createElement("div",{id:"parent"},
@@ -127,12 +132,14 @@ const AppLayout = () => {
   }, []);
 
   return (
+    <Provider  store={appStore}>
     <UserContext.Provider value={{ logedInUser: userName, setUserName }}>
       <div className="app">
         <Header />
         <Outlet />
       </div>
     </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -173,6 +180,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restrurents/:resId",
         element: <ResturantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,
